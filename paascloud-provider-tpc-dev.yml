@@ -2,7 +2,7 @@ spring:
   cache:
     cache-names: tpc-cache
   datasource:
-    url: jdbc:mysql://47.113.185.160:3306/paascloud_tpc?characterEncoding=utf8&useSSL=false
+    url: jdbc:mysql://localhost:3306/paascloud_tpc?characterEncoding=utf8&useSSL=false
 
 liquibase:
   change-log: classpath:liquibase/index.xml
@@ -70,7 +70,7 @@ paascloud:
       clientAuthenticationScheme: header
       tokenStore: jwt
   zk:
-    zkAddressList: 47.113.185.160:2181
+    zkAddressList: 192.168.229.129:2181
     namespace: paascloud-elastic-job
   job:
     task:
